@@ -1,29 +1,31 @@
+
 <!doctype html>
 <html>
 <head>
   <meta charset="utf-8">
   <title>Authenticator</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'/>
   <style>
-    body { font-family: Arial, sans-serif; padding: 0px; background: #f5f5f5; }
+    body { font-family: Poppins; padding: 0px; background: #f5f5f5; }
     h2 { margin-bottom: 10px;text-align:center }
     .guru { 
       margin: auto; 
 	  margin-bottom:20px;
       padding: 15px; 
-      background: #d0e2ed; 
+   background:linear-gradient(135deg,#7c3aed 0%,#f59e0b 100%);
       border-radius: 10px; 
-      box-shadow: 0 1px 2px rgba(0,0,0,0.8); 
+      box-shadow: 0 2px 2px rgba(0,0,0,0.9); 
 	  max-width:300px;
     }
     .guru h3 {
       margin: 0 0 10px 0;
-      color: #0d47a1;
+      color: white;
     }
     .account { 
       background: white; 
       margin: 8px 0; 
-      padding: 10px; 
+      padding: 7px; 
       border-radius: 6px; 
       box-shadow: 0 1px 3px rgba(0,0,0,0.1); 
       display: flex;
@@ -34,8 +36,8 @@
     .account:hover { background: #f1f8ff; }
     .user { font-weight: bold; }
     .otp { font-size: 22px; font-weight: bold; color: #2e7d32; }
-    .progress { height: 4px; background: #ddd; border-radius: 4px; margin-top: 6px; overflow: hidden; }
-    .bar { height: 4px; background: #4caf50; width: 0; }
+    .progress { height: 4px; background: white; border-radius: 4px; margin-top: 6px; overflow: hidden; }
+    .bar { height: 4px; background: linear-gradient(135deg,#7c3aed 0%,#f59e0b 100%); width: 0; }
 	#b1{font-size:23px}
 	 :root{--bg:#ffffff;--panel:#fff;--overlay:rgba(0,0,0,.2);--accent:#1e88e5}
 	  button{background:var(--accent);color:#fff;border:0;padding:12px 18px;border-radius:8px;font-weight:600;cursor:pointer;}
@@ -53,12 +55,12 @@
       font-size: 20px;
       margin-bottom: 20px;
     }
-    .btn {
+    .btn1 {
       display: inline-block;
       margin: 10px;
-      padding: 12px 20px;
+      padding: 10px 20px;
       font-size: 16px;
-      border-radius: 8px;
+      border-radius: 30px;
       border: none;
       cursor: pointer;
       background: #0066cc;
@@ -66,8 +68,25 @@
       text-decoration: none;
       transition: background 0.2s;
     }
-    .btn:hover {
+    .btn1:hover {
       background: #004c99;
+    }
+	
+	.btn2 {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      background: red;
+      color: #fff;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .btn2:hover {
+      background: #f10a0a;
     }
   </style>
 </head>
@@ -76,15 +95,15 @@
  
     
 
-  <a class="btn" href="https://info.gtk.kemendikdasmen.go.id/" target="_blank">
+  <a class="btn1" href="https://info.gtk.kemendikdasmen.go.id/" target="_blank">
     Buka Link info GTK
   </a>
 
-  <a class="btn" href="https://sso.datadik.kemdikbud.go.id/app/4031C604-124C-4057-8631-99E0152C4C70" target="_blank">
+  <a class="btn2" href="https://sso.datadik.kemdikbud.go.id/app/4031C604-124C-4057-8631-99E0152C4C70" target="_blank">
     Buka Link Individual GTK
   </a></center>
   <br>
-  <center> <b id="b1">Authenticator | OKSIH</b></center><br>
+  <center> <b id="b1">Authenticator</b></center><br>
   <div id="out"></div>
 <center><span style="font-size:14px;">©2025 By Admin UPTD SMPN 9 Sinjai</span></center>
 <!-- Modal markup -->
@@ -110,9 +129,6 @@ let vmM=typeof globalThis!=='undefined'?globalThis:typeof window!=='undefined'?w
 </script>
 </body>
 </html>
-
-
-
 
 
 
